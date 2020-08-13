@@ -1,9 +1,6 @@
 class GamesController < ApplicationController
   def new
-    @letters = ('a'..'z').to_a
-    @letters.sample(10)
-    @letters.shuffle
-    puts @letters
+    @letters = ('A'..'Z').to_a.sample(10).shuffle
   end
 
   def score
